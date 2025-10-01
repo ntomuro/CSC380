@@ -1,4 +1,4 @@
-# CSC 380 Spring 2025
+# CSC 380 Foundations of AI
 
 Code repository
 
