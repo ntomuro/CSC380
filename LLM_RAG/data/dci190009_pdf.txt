@@ -1,0 +1,155 @@
+Nutritional Strategies for Prevention and Management of Diabetes: Consensus and Uncertainties 
+Diabetes Care 2019;42:727–730 | https://doi.org/10.2337/dci19-0009 
+
+The nutrition Consensus Report (1) and four featured papers (2–5) in the special section on nutrition in this issue of Diabetes Care focus on nutrition therapy and medical nutrition therapy (MNT) in the management and prevention of diabetes. The Consensus Report, which is intended to update and replace the 2014 American Diabetes Association (ADA) nutrition position statement (6), examines “studies published in English between 1 January 2014 and 28 February 2018” to “provide clinical professionals with evidence-based guidance” (1) related to the 42 questions listed in Table 1. The ADA has indicated, “A consensus report is not an ADA position and represents expert opinion only” and does not include the ADA evidence-grading system (7). We examine the Consensus Report and nutrition articles featured in this issue considering epidemiological trends, population health versus professional intervention approaches, implications of feeding studies and interventional trials, and potential for personalization/ individualization of nutritional approach based on genetic, metabolomic, and microbiomic variation or personal/cultural preferences. 
+The 2014 statement (6) focused on nutrition therapy for “adults with diabe­tes” whereas the 2019 Consensus Report has a broader scope and addresses nutrition therapy for “adults with diabetes or prediabetes” (1). Inclusion of adults with prediabetes expands the population base for nutrition therapy to 43.3% of U.S. adults based on the Centers for Disease Control and Preven­tion prevalence estimates that 9.4% of U.S. adults have diabetes and 33.9% of U.S. adults have prediabetes (8). 
+
+
+A recent systematic review and meta-analysis published in Diabetes Care (9) synthesized the global evidence on the impact of lifestyle modifications on reducing the incidence of diabetes in a parsimonious model to inform resource allocation. Although evidence from clin­ical trials shows that type 2 diabetes is largely preventable clinically, population-level reductions in the prevalence of diabetes will require examination of public policies, the food and built environments, and health systems (10). Policy solutions for addressing challenges related to the social and environmental determinants of diabetes risk need to be developed, evaluated, and incorporated into obesity and diabetes prevention strategies. Since the Consensus Report is designed for clinical professionals, population-based approaches to diabetes prevention are beyond the scope of questions and recommendations addressed by the expert panel. 
+Judith Wylie-Rosett1 and Frank B. Hu2,3 
+The Consensus Report (1) examines research that addressed the postprandial metabolic effects of mixed meals and recommends that insulin-dosing decisions “should not be based solely on carbohydrate counting.” Based on their evidence review, the expert panel has recommended “a cautious approach to increasing mealtime insulin doses” for mixed meals that are high in fat and/or protein and indicated that “continuous glucose monitoring (CGM) or self-monitoring of blood glucose (SMBG) should guide decision making.” Implementing this recommendation will involve individualizing nutrition therapy based on glycemic data obtained by the patients. 
+The Consensus Report (1) highlights the role of weight management, dietary patterns, and technology-enabled tools in diabetes prevention and management. There is a clear consensus on reducing intake of added sugars, sodium, and unhealthy fats, especially trans fat, in the diet, although the panel does not recommend a “one-size-fits-all” eating plan. Instead, multiple eating patterns including the Mediterranean diet, DASH (Dietary Approaches to Stop Hyperten­sion) diet, and vegetarian and low-carbohydrate diets can be used for weight and diabetes management. However, the quality and food sources of the macro nutrients are among the most 
+
+
+Table 1—Questions addressed by the nutrition Consensus Report expert panel 
+1. 
+How is diabetes nutrition therapy defined? 
+
+2. 
+How is MNT defined and provided? 
+
+
+3. 
+How is diabetes self-management education and support (DSMES) defined? 
+
+4. 
+Is MNT effective in improving outcomes and quality of life? 
+
+5. 
+What is the role of weight loss therapy in people with prediabetes or diabetes with overweight or obesity? 
+
+6. 
+What is the role of weight loss on potential for diabetes remission? 
+
+7. 
+What is the role of eating plans that result in energy deficits and weight loss in type 1 diabetes? 
+
+8. 
+How does disordered eating factor into weight management? 
+
+9. 
+How should the ideal weight loss plan for individuals with diabetes be determined? 
+
+10. 
+What is the evidence to support specific eating patterns for the management of diabetes? 
+
+11. 
+What is the evidence to support specific eating patterns in the management of type 2 diabetes? 
+
+12. 
+What is the evidence to support specific eating patterns in the management of type 1 diabetes? 
+
+13. 
+Do macro nutrient needs differ for people with diabetes compared with the general population? 
+
+14. 
+Do carbohydrate needs differ for people with diabetes compared with the general population? 
+
+15. 
+What are the dietary fiber needs of people with diabetes? 
+
+16. 
+How do glycemic index and glycemic load impact glycemia? 
+
+17. 
+What are the dietary fat goals for people with diabetes? 
+
+18. 
+Do trans fat intake recommendations differ for people with diabetes? 
+
+19. 
+Should people with diabetes limit their dietary cholesterol intake? 
+
+20. 
+What are the total protein needs of people with diabetes? 
+
+21. 
+What is the impact of non-nutritive sweeteners and sugar alcohols? 
+
+22. 
+What are the effects of alcohol consumption on diabetes-related outcomes? 
+
+23. 
+What are the effects of alcohol consumption on hypoglycemia risk in people with diabetes? 
+
+24. 
+What is the effectiveness of micro nutrients on diabetes-related outcomes? 
+
+25. 
+What is the role of herbal supplementation in the management of diabetes? 
+
+26. 
+Does the use of metformin affect vitamin B12 status? 
+
+27. 
+How does the timing of insulin injection around meals impact postprandial glucose response? 
+
+28. 
+How should nutrition therapy vary based on the type and intensity of the glucose-lowering medications? 
+
+29. 
+What is the role of the registered dietitian nutritionist/registered dietitian (RDN) in medication adjustment? 
+
+30. 
+Does comprehensive diabetes nutrition therapy support cardiovascular risk factor reduction? 
+
+31. 
+Do the dietary recommendations differ for people who are at risk for or have cardiovascular disease and diabetes? 
+
+32. 
+Can lowering sodium intake reduce blood pressure and other cardiovascular risk factors in people with diabetes? 
+
+33. 
+Are protein needs different for people with diabetes and kidney disease? 
+
+34. 
+How is diabetic gastroparesis best managed? 
+
+35. 
+How is the risk of malnutrition in diabetic gastroparesis managed? 
+
+36. 
+What nutrition therapy services or interventions best help people with prediabetes prevent or delay the development of type 2 diabetes? 
+
+37. 
+What is the role of weight loss in diabetes prevention? 
+
+38. 
+Does the consumption of sugar-sweetened beverages impact risk of diabetes? 
+
+39. 
+What eating patterns are recommended to manage prediabetes and to prevent diabetes? 
+
+
+40. 
+What is the role of fat in the prevention of type 2 diabetes? 
+
+41. 
+How does alcohol consumption impact risk of developing type 2 diabetes? 
+
+42. 
+Do genetic, metabolomic, or microbiomic variants or other types of personalized nutrition prescriptions influence glycemic or other diabetes-related outcomes? 
+
+
+critical factors determining the efficacy and long-term outcomes of these diets. 
+Recent intervention trial articles in Di­abetes Care, which were published after the expert panel’s literature search, provide insights regarding the potential adverse effects of short-term caloric excess from saturated fat and the potential early adult health benefits from adhering to dietary recommendations during child­hood. In a short-term (3 weeks) three-arm randomized controlled trial (RCT), Luukkonen et al. (11) found that adding 1,000 kcals from saturated fat resulted in greater deposition of fat in the liver and an increase in insulin resistance compared with than adding 1,000 kcal from sugar, while adding the same amount of calories from unsaturated fats had the least effect (11). These results support current recommendations to replace saturated fat and added sugars with healthy fats and carbohydrates. In a two-arm RCT of 20 years’ duration, Laitinen et al. (12) found that biannual nutrition consultations, which began in infancy and focused on quality of dietary fat and promoted intake of vegetables, fruits, and whole­grain products, resulted in better insulin sensitivity and lipid profile in early adult­hood. Future studies will be needed to address pragmatic questions about the potential effectiveness of early intervention as a life-course approach for addressing the growing global diabetes epidemic. 
+care.diabetesjournals.org 
+Wylie-Rosett and Hu 729 
+The role of gluten (a storage protein found in wheat, rye, and barley) in the etiology of diabetes remains controversial. In an observational analysis of children at high risk for type 1 diabetes published in this issue of Diabetes Care, intake of gluten at age 1–2 years was not associated with development of islet au­toimmunity or progression to type 1 diabetes (2). Likewise, among individuals without diabetes, lower gluten intake was not associated with reduced risk of developing type 2 diabetes (13). In contrast, there was an higher risk of type 2 diabetes among individuals with lower gluten in­take, probably reflecting lower intake of fiber and whole grains in this group. 
+The meta-analysis paper by Jovanovski et al. (3), which analyzed 28 soluble fiber supplementation RCTs, found that fiber supplementation significantly improved HbA1c, fasting glucose, fasting insulin, and HOMA of insulin resistance among patients with diabetes. Given the short duration of these trials (median of ;8 weeks), the longer-term effects of fiber supplementation in diabetes management are still uncertain. The third featured article in this special section reports findings from the Prevencion´ con DietaMediterranea(PREDIMED)-Plus12­month pilot study, which demonstrated achievement of greater weight and cardiometabolic benefits from an energy-restricted Mediterranean diet combined with physical activity than from the dietary intervention alone among individuals with diabetes or at high risk of diabetes (4). 
+The featured meta-analysis paper by Noronha et al. (5) analyzed nine weight loss RCTs that were designed to evaluate the use of liquid meal replacements among patients with type 2 diabetes. Using liquid meal replacements resulted in modestly greater reduction in body weight and systolic blood pressure, and their use also achieved slightly greater reductions in HbA1c and diastolic blood pressure, which were considered to be of marginal clinical significance The certainty of the evidence was rated as low to moderate due to imprecision and methodological inconsistency. High-quality studies are needed to improve the certainty with regard to the potential benefits of using meal replacements as a weight loss strategy for preventing and managing type 2 diabetes. 
+The Consensus Report (1) indicates that “personalized nutrition approaches to examine genetic, metabolomic, and microbiomic variations have not yet identified specific factors that consistently improve outcomes in type 1 diabetes, type 2 diabetes, or prediabetes.” Recent Diabetes Care articles by Heianza and colleagues (14,15) analyzed data from the Preventing Overweight Using Novel Dietary Strategies (POUNDS Lost) trial to advance understanding of the genetic and metabolic predictors of responsiveness to lower caloric diets of varying macro nutrient composition. One article (14), which focused on fibroblast growth factor 21 (FGF21) genetic variants associated with macro nutrient intake preference, reported that FGF21 geno­typing may help predict which individuals who are overweight or obese will be more likely to benefit from restricting carbohydrate. The other article (15) focused on how weight loss diet intervention– induced changes in gut microbiota-related metabolites associated with improvements in adiposity and regional fat deposition. While these results are promising, they need to be replicated in other populations. Recent technological advances in assessing genetic, metabolomic, and microbiomic features, as well as mobile apps and wearable devices, can faciliate individualization of dietary guidance for more effective prevention and management of diabetes. However, evidence is still lacking about the ef.cacy, cost-effectiveness, and additional benefits of personalized nutrition therapy beyond traditional approaches (16). The Consensus Report calls for nutrition research of “increased length and size... to better understand long-term impacts on clinically relevant outcomes” (1). Specific areas targeted for future research include comparing dietary patterns, addressing cultural and personal dietary preferences, tailoring diabetes MNT, and comparing use of technology for personalizing and delivering intervention. 
+Much progress has been made to improve evidence-based nutrition recommendations for prevention and management of diabetes since the 2014 ADA nutrition position statement (6). The Consensus Report is not only useful in synthesizing the best available evidence but also in highlighting many areas of uncertainties that warrant more research (1). Future research will help inform recommendations for personalized nutrition therapy approaches that consider preferences and culture as well as genetic, metabolomic, and microbiomic variations. As the portion of the population with diabetes or prediabetes increases, research and technological advances can help inform strategies for improving access and tailoring nutrition therapy. However, we must also recognize the need for primary prevention research to inform population health approaches to curbing the obesity and diabetes epidemics. 
+Funding. J.W.-R. is supported in part by a National Institute of Diabetes and Digestive and Kidney Diseases grant for the New York Regional Center for Diabetes Translational Re­search (DK111022). F.B.H. is supported by National Institute of Diabetes and Digestive and Kidney Diseases grants DK112940 and DK102896. Duality of Interest. F.B.H. received lecture fees from Metagenics and Standard Process out­side the submitted work. No other potential conflicts of interest relevant to this article were reported. 
+
+
