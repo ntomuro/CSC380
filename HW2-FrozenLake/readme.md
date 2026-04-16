@@ -1,6 +1,10 @@
-# HW#2 Frozen Lake
+# :robot: HW#2 Frozen Lake
 
-Repository of the code files of the assignment.
+## :rocket: Note
+
+Assignment page: https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/HW2/hw2-2026spring.html
+
+:robot: Repository of the code files of the assignment.
 <ul>
   <li>"380-hw2-examplecode.ipynb" -- Start-up Notebook file (also its html file)</li>
   <li>"main.py" -- script file to run a policy in graphic mode</li>
