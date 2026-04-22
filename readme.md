@@ -8,7 +8,7 @@ Following assignments are planned so far (as of April 2026).
 
 - Homework #1: :alien: Maze Search
 - Homework #2: :robot: Frozen Lake
-- Homework #3: :deciduous_tree: Machine Learning
+- Homework #3: :deciduous_tree: Kuzushiji-46
 - Homework #4: :dog: LLM-RAG
 
 ## :rocket: Note
