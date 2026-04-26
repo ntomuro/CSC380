@@ -1,33 +1,22 @@
 # :deciduous_tree: HW#3 Kuzushiji-46 Image Classification
 
+![Kuzushiji examples](orig-image.png)
+
 ## :deciduous_tree: Note
 
 Assignment page: https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/HW2/hw2-2026spring.html
 
 ### :robot: Repository of the code files of the assignment.
 <ul>
-  <li>"380-hw2-examplecode.ipynb" -- Start-up Notebook file (also its html file)</li>
-  <li>"main.py" -- script file to run a policy in graphic mode</li>
+  <li>"Kuzushiji_starter.ipynb" -- Start-up Notebook filefor <b>Google Colab</b></li>
+  <li>"Kuzushiji_starter.html" -- html version of the code above</li>
 </ul>
 
-## Usage to run main.py
+## Kaggle Competition
 
-First create a virtual environment and install the dependencies:
+Competition site: https://www.kaggle.com/t/c7c3009402644902b4f4240b38a0bd97
 
-```
-python -m venv venv
-source venv/bin/activate     # or venv\Scripts\activate for Windows PC
-pip install -r requirements.txt
-```
-then
-```
-- 'python main.py' -- episodes will run using a random fixed policy, or
-- 'python main.py policy.txt' -- episodes will run using a give policy stored
-                                   in a file, where a policy is written in one
-                                   line separated by spaces, e.g.
-                                   '3 1 0 3 2 ...'
-```
-
+Submissions (on Kaggle) are accepted until May 19 (Tue) 10:00 pm (CDT).  Note the homework submissions (on D2L) are due the same day, May 19 (Tue) 11:59 pm (CDT).
 
 ## Acknowledgments
 

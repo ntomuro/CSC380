@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSC 380 HW#3 (Spring 2026) Kuzushiji-46</title>
+<style>
+  body { font-family: sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #fff; color: #333; }
+  h1 { font-size: 1.6em; border-bottom: 2px solid #ccc; padding-bottom: 8px; }
+  h2 { font-size: 1.3em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  h3 { font-size: 1.1em; color: #444; }
+  .cell { margin-bottom: 1.2em; }
+  .markdown-cell { padding: 4px 0; }
+  .code-cell { background: #f5f5f5; border-left: 4px solid #aaa; padding: 12px 16px; border-radius: 4px; white-space: pre; font-family: monospace; font-size: 0.9em; overflow-x: auto; }
+  .todo { background: #fff8dc; border-left: 4px solid #f0ad4e; padding: 8px 12px; border-radius: 4px; font-weight: bold; }
+  ul { margin: 0.3em 0 0.3em 1.5em; }
+</style>
+</head>
+<body>
+
+<div class="cell markdown-cell">
+  <h1>CSC 380 HW#3 (Spring 2026) Kuzushiji-46</h1>
+  <p>Starter code</p>
+</div>
+
+<div class="cell markdown-cell todo">
+  <h3>TO-DO (0): Write your name</h3>
+</div>
+
+<div class="cell code-cell"># TensorFlow and tf.keras
+import tensorflow as tf
+import tensorflow.keras
+
+# Helper libraries
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+print(tf.__version__)</div>
+
+<div class="cell code-cell"># ── Japanese font setup for matplotlib ───────────────────────
+!apt-get install -y fonts-ipafont-gothic -qq
+
+from matplotlib import font_manager
+
+# Register the newly installed font
+font_manager.fontManager.addfont(
+    '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf')
+
+# Tell matplotlib to use it
+matplotlib.rcParams['font.family'] = 'IPAGothic'
+
+print("Japanese font ready:",
+      matplotlib.rcParams['font.family'])</div>
+
+<div class="cell markdown-cell">
+  <h2>1. Load data</h2>
+</div>
+
+<div class="cell code-cell"># Load data from course Github site
+depo_url = "https://raw.githubusercontent.com/ntomuro/CSC380/main/HW3-Kuzushiji-46/"
+
+# download data
+!wget -O train.npz {depo_url}train.npz
+!wget -O val.npz {depo_url}val.npz
+!wget -O test.npz {depo_url}test.npz
+!wget -O class_map.csv {depo_url}class_map.csv
+
+# training data
+train = np.load('train.npz')
+X_train, y_train = train['images'], train['labels']   # (48300, 28, 28, 1) uint8
+print(f'Training: x={X_train.shape}, y={y_train.shape}')
+input_shape = X_train.shape[1:-1] # image shape - Global Variable
+print (f'  input image shape={input_shape}')
+num_classes = len(np.unique(y_train)) # number of classes - Global Variable
+print (f'  num of classes={num_classes}')
+
+# validation data
+val   = np.load("val.npz")
+X_val, y_val = val['images'], val['labels']
+print(f'Validation: x={X_val.shape}, y={y_val.shape}') # (10350, 28, 28, 1)
+
+# test data
+test  = np.load("test.npz")
+X_test = test['images']   # (10350, 28, 28, 1) — submit predictions for these
+print(f'Test: x={X_test.shape}')</div>
+
+<div class="cell markdown-cell">
+  <h2>2. Preprocess data</h2>
+</div>
+
+<div class="cell markdown-cell todo">
+  <h3>TO-DO (1): Normalize images so that each pixel value will be a floating number and between 0.0 and 1.0 (by dividing by 255.0).</h3>
+</div>
+
+<div class="cell code-cell"># TO-DO (1)
+train_images = #YOU FILL IN HERE
+val_images =   #YOU FILL IN HERE
+test_images =  #YOU FILL IN HERE
+
+train_labels = y_train
+val_labels = y_val</div>
+
+<div class="cell markdown-cell">
+  <h2>3. Build/Define the model</h2>
+  <p>We will use a multi-layer feed-forward network (also called MFFNN). The starter model is quite simple: input layer + one hidden layer + output layer.</p>
+</div>
+
+<div class="cell code-cell">model = tf.keras.Sequential([
+    tf.keras.layers.Flatten(input_shape=input_shape), # input 28*28==784 gray pixels is made into 1-D array
+    tf.keras.layers.Dense(128, activation='relu'), # a hidden layer with 128 nodes with activation function 'relu'
+    tf.keras.layers.Dense(num_classes)  # DON'T CHANGE this line: output layer with the number of image classes (46)
+])</div>
+
+<div class="cell markdown-cell">
+  <h2>4. Compile the model</h2>
+  <p>Before the model is ready for training, it needs a few more settings. These are added during the model's compile step:</p>
+  <ul>
+    <li><b>Optimizer</b> — This is how the model is updated based on the data it sees and its loss function. Notable hyperparameters are <b>learning_rate</b> and <b>weight_decay</b>.</li>
+    <li><b>Loss function</b> — This measures how accurate the model is during training. You want to minimize this function to "steer" the model in the right direction.</li>
+    <li><b>Metrics</b> — Used to monitor the training and testing steps. The following example uses accuracy, the fraction of the images that are correctly classified.</li>
+  </ul>
+</div>
+
+<div class="cell code-cell"># learning rate can be overridden (from default 0.001 to whatever you like)
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)#, my override
+                                     #weight_decay=1e-6) #
+
+model.compile(optimizer=optimizer,
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), # DON'T CHANGE this line
+              metrics=['accuracy'])</div>
+
+<div class="cell markdown-cell">
+  <h2>5. Train the model</h2>
+  <p>We train the model, using the training and validation data, with optimizer. We can specify/override the number of epochs in the parameter too.</p>
+</div>
+
+<div class="cell code-cell">history = model.fit(
+    train_images, train_labels,
+    validation_data=(val_images, val_labels), epochs=20) # you can train longer epochs too, of course.</div>
+
+<div class="cell markdown-cell todo">
+  <h3>TO-DO (2): Plot the performance that compares training vs. validation sets, on accuracy and loss.</h3>
+</div>
+
+<div class="cell code-cell">## TO-DO (2):
+##  YOU FILL IN HERE</div>
+
+<div class="cell markdown-cell">
+  <h2>6. Make predictions</h2>
+  <p>With the model trained, you can use it to make predictions on some images. Attach a <b>softmax layer</b> to convert the model's linear outputs—logits to <b>probabilities</b> (for each class), which should be easier to interpret.</p>
+</div>
+
+<div class="cell code-cell"># Add a softmax layer on the trained model
+probability_model = tf.keras.Sequential([model, # trained model
+                                         tf.keras.layers.Softmax()])</div>
+
+<div class="cell markdown-cell todo">
+  <h3>TO-DO (3): Generate predictions for the <b>test</b> images</h3>
+</div>
+
+<div class="cell code-cell">## TO-DO (3):
+##  YOU FILL IN HERE</div>
+
+<div class="cell markdown-cell todo">
+  <h3>TO-DO (4): Write the test predictions in a file (for Kaggle submission).</h3>
+</div>
+
+<div class="cell code-cell">## TO-DO (4):
+##  YOU FILL IN HERE</div>
+
+</body>
+</html>
