@@ -29,6 +29,10 @@ The three enviroments are selected to demonstrate:
 ## 🚀 Quick Start (change the script file to "highway_app.py", "merge_app.py" or "parking_app.py"
 
 ```bash
+# 0. Create a virtual environment
+python -m venv venv
+source venv/bin/activate     # or venv\Scripts\activate for Windows PC
+
 # 1. Install dependencies
 pip install -r requirements.txt
 
