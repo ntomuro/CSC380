@@ -1,6 +1,6 @@
 # :deciduous_tree: HW#3 Kuzushiji-46 Image Classification
 
-![Kuzushiji examples](orig-image.png)
+![Kuzushiji examples](dataset_preview.png)
 
 ## :deciduous_tree: Note
 
