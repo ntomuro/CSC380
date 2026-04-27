@@ -1,4 +1,4 @@
-# [Extra] Gymnasium γ (gamma) Explorer — Highway-env Streamlit App
+# [Extra] Gymnasium γ (gamma) Explorer — Highway-env Streamlit Testbed App
 
 Interactive demo for demonstrating the **discount factor γ** in Markov Decision Processes (MDP),
 using Gymnasium's Highway-Env environment with real Value Iteration.
@@ -24,6 +24,9 @@ The three enviroments are selected to demonstrate:
 - **Highway** — moderately sensitive because long horizon driving
 - **Merge** -- highly sensitive because delayed cooperative behavior on the access ramp
 - **Parking** -- less sensitive because Dense reward shaping (distance, angle, etc.)
+
+More detailed explanations are available in the document **"More-explanations-on-Gymnasium γ.pdf"**.
+
 ---
 
 ## 🚀 Quick Start (change the script file to "highway_app.py", "merge_app.py" or "parking_app.py"
