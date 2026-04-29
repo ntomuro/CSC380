@@ -1,7 +1,7 @@
 # [Extra] Gymnasium γ (gamma) Explorer — Highway-env Streamlit Testbed App
 
 Interactive demo for demonstrating the **discount factor γ** in Markov Decision Processes (MDP),
-using ![Gymnasium](https://gymnasium.farama.org/)'s ![Highway-Env](https://highway-env.farama.org/quickstart/) environment with real Value Iteration.
+using [Gymnasium](https://gymnasium.farama.org/)'s [Highway-Env](https://highway-env.farama.org/quickstart/) environment with real Value Iteration.
 
 ## :rocket: Note
 
