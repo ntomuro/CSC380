@@ -10,6 +10,7 @@ Following assignments are planned so far (as of April 2026).
 - Homework #2: :robot: Frozen Lake
 - Homework #3: :deciduous_tree: Kuzushiji-46
 - Homework #4: :dog: LLM-RAG
+- Extra Credit: :warning: Global Earthquake Analysis
 
 ## :rocket: Note
 
