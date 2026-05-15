@@ -10,6 +10,7 @@ Assignment page: https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign
 <ul>
   <li>"Kuzushiji_starter.ipynb" -- Start-up Notebook filefor <b>Google Colab</b></li>
   <li>"Kuzushiji_starter.html" -- html version of the code above</li>
+  <li>"Kuzushiji_with_examples.ipynb" -- examples of Kuzushiji character images
 </ul>
 
 ## Kaggle Competition
