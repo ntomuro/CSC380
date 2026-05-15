@@ -16,7 +16,7 @@ Assignment page: https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign
 
 Competition site: https://www.kaggle.com/t/c7c3009402644902b4f4240b38a0bd97
 
-Submissions (on Kaggle) are accepted until May 19 (Tue) 10:00 pm (CDT).  Note the homework submissions (on D2L) are due the same day, May 19 (Tue) 11:59 pm (CDT).
+Submissions (on Kaggle) are accepted until <b>May 21 (Thu) 10:00 pm</b> (CDT).  Note the homework submissions (on D2L) are due the same day, <b>11:59 pm</b> (CDT).
 
 ## Acknowledgments
 
