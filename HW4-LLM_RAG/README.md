@@ -8,4 +8,4 @@ Input data files are placed under the subdirectory 'data'.
 
 Note that this assignment emphasizes on **analysis**, which you write in the WRITE-UP REPORT, equally with the code implementation.  See the [assignment page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/HW4/hw4-2026spring.html) for details.
 
-<img = https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/HW4/img2.jpg>
+<img = https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/HW4/agentic_rag_with_llm_judge.svg>
