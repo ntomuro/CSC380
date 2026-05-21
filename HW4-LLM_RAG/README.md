@@ -2,7 +2,7 @@
 
 You must first set up your coding environment (e.g. API keys, to be stored in Google Colab).  Follow the instructions described in this document: 
 
-The start-up code is a notebook file, **"hw4_llm_rag_starter_v4.ipynb"**.  Your task is to fill in the sections marked '# TODO', plus run the code cell after for Experiment 2 and 3. You must also write your name, course number etc. at the top of the file.
+The start-up code is a notebook file, **"hw4_llm_rag_starter.ipynb"**.  Your task is to fill in the sections marked '# TODO', plus run the code cell after for Experiment 2 and 3. You must also write your name, course number etc. at the top of the file.
 
 Input data files are placed under the subdirectory 'data'.
 
