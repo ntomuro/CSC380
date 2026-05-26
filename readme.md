@@ -9,7 +9,7 @@ Code and file repository for assignments and project.
 - Homework #3: :deciduous_tree: Kuzushiji-46
 - Homework #4: :dog: LLM-RAG
 - Extra Credit: :warning: Global Earthquake Analysis
-- Final Project :japanese_goblin: AI and Security
+- Final Project: :japanese_goblin: AI and Security
 
 ## :rocket: Note
 
