@@ -9,72 +9,91 @@ their findings into a final security verdict.
 
 This is **defensive AI security** — you are building a detection system, not an attack tool.
 
-Assignment page: https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html
+---
 
-## Setup
+## Quick Start (Google Colab)
 
-### 1. Create a virtual environment
+This project runs entirely on Google Colab. No local installation is required.
 
-```
-python -m venv venv
-```
+### Step 1 — Read the scaffold notebook first
 
-### 2. Activate it
+The scaffold teaches you the LangGraph concepts you need before starting the project.
 
-- Windows: `venv\Scripts\activate`
-- Mac/Linux: `source venv/bin/activate`
+[Open langgraph_scaffold_colab.ipynb in Colab](https://colab.research.google.com/github/ntomuro/CSC380/blob/main/starter/langgraph_scaffold_colab.ipynb)
 
-### 3. Install dependencies
+### Step 2 — Open the project notebook
 
-```
-pip install -r requirements.txt
-```
+[Open prompt_injection_detection_colab.ipynb in Colab](https://colab.research.google.com/github/ntomuro/CSC380/blob/main/starter/prompt_injection_detection_colab.ipynb)
 
-### 4. Set your OpenAI API key
+Save a copy to your Drive immediately: **File → Save a copy in Drive**
 
-Copy `.env.example` to `.env` and fill in your key:
+### Step 3 — Follow COLAB_INSTRUCTIONS.md
 
-```
-cp .env.example .env
-# then edit .env and replace sk-... with your real key
-```
+See **[COLAB_INSTRUCTIONS.md](COLAB_INSTRUCTIONS.md)** for the complete setup walkthrough:
+API key configuration, which cells to run first, and troubleshooting.
 
-### 5. Launch the notebook
+---
+
+## Repository Structure
 
 ```
-jupyter notebook starter/prompt_injection_detection.ipynb <== to be updated (!)
-```
-
-## Project Structure
-
-```
-FinalProject_security/
-├── requirements.txt
-├── .env.example
-├── README.md
+CSC380/
+├── starter/
+│   ├── prompt_injection_detection_colab.ipynb   ← student working file (Colab)
+│   ├── prompt_injection_detection.ipynb         ← local version (optional)
+│   ├── langgraph_scaffold_colab.ipynb           ← LangGraph tutorial (Colab)
+│   └── langgraph_scaffold.py                    ← plain-Python scaffold
 ├── data/
-│   └── synthetic_dataset.py    <- 60 labeled conversations
-├── agents/
-│   ├── state.py                <- LangGraph state schema (you fill this in)
+│   └── synthetic_dataset.py    ← 60 labeled conversations (embedded in Colab notebook)
+├── agents/                     ← reference implementations (do not copy)
+│   ├── state.py
 │   ├── intent_analysis_agent.py
 │   ├── instruction_hierarchy_agent.py
 │   └── risk_classification_agent.py
 ├── graph/
-│   └── detection_graph.py      <- LangGraph graph (you wire the edges)
+│   └── detection_graph.py      ← reference graph (do not copy)
 ├── evaluation/
-│   └── metrics.py              <- evaluation utilities
-└── starter/
-    └── prompt_injection_detection.ipynb  <- your working notebook
+│   └── metrics.py              ← evaluation utilities (embedded in Colab notebook)
+├── reference/
+│   ├── solution_colab.ipynb    ← instructor reference solution (Colab)
+│   └── solution_local.ipynb    ← instructor reference solution (local)
+├── ASSIGNMENT.md               ← full project specification and rubric
+├── COLAB_INSTRUCTIONS.md       ← step-by-step Colab setup guide for students
+└── requirements.txt            ← for local development only
 ```
+
+---
+
+## Local Development (Optional)
+
+If you prefer to run the notebook locally instead of on Colab:
+
+```bash
+# 1. Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # Mac/Linux
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Add your OpenAI API key
+cp .env.example .env
+# Edit .env and replace sk-... with your real key
+
+# 4. Launch the notebook
+jupyter notebook starter/prompt_injection_detection.ipynb
+```
+
+---
 
 ## Submission
 
-Submit your completed notebook as a `.ipynb` file with **all cell outputs present**.
+1. In Colab: **File → Download → Download .ipynb**
+2. Rename: `Lastname_Firstname_FinalProject.ipynb`
+3. Upload to D2L with **all cell outputs present**.
 
-Required outputs:
-- The Mermaid diagram in Cell 11 must be rendered (proves correct graph topology)
-- The confusion matrix plot in Cell 15 must be visible
-- All evaluation metric values must be printed
+---
 
 ## Academic Integrity
 
