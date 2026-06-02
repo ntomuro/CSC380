@@ -10,6 +10,8 @@ their findings into a final security verdict.
 
 This is **defensive AI security** — you are building a detection system, not an attack tool.
 
+**[Overall Assignment Page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html)** - This is THE assignment page.  Check it for **SUBMISSION REQUIREMENTS**.
+
 ---
 
 ## Quick Start (Google Colab)

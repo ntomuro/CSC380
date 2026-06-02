@@ -1,13 +1,8 @@
-# Final Project: Multi-Agent Adversarial Prompt Injection Detection System
+# Code Specifications
 
-**Course:** CSC 380 Foundations of AI (2026 Spring)
-**Format:** Final Project — replaces final exam  
-**Due date:** June 11 (Thu), 11:59 pm.  NO LATE SUBMISSIONs will be accepted. 
-**Platform:** Google Colab (no local installation required)  
-**Deliverables:** See the **[assignment page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html)** for full details.
- - Completed Jupyter Notebook (`.ipynb`) downloaded from Colab with all cell outputs present.  You must fill in **TODO 1-19**.
-     The notebook also includes **"Cell 17 — Reflection Questions"** where you write your answers to the four questions (REQUIRED).
- - Video of code walk-through and discussions.
+Essentially, your job is to fill in TODO's in "starter/prompt_injection_detection.ipynb".
+
+However, you must know what you need to fill each one.  Here are some overall guides.
 
 ---
 
@@ -305,19 +300,6 @@ Every time you reconnect to a new Colab runtime, run these three cells before an
 
 ---
 
-## 10. Submissions
-
-- Submit your completed notebook as a `.ipynb` file via D2L with **all cell outputs present**.
-- Create a video of code walk-through and discussions.
-
-### How to download from Colab
-
-1. In Colab: **File → Download → Download .ipynb**
-2. **Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`**
-3. Upload to D2L.
-
-Make sure all cell outputs are visible in the downloaded file. If a cell shows no output, re-run it and download again.
-
 ### Pre-submission checklist
 
 **Before submitting, verify all required outputs are present:**
@@ -329,19 +311,6 @@ Make sure all cell outputs are visible in the downloaded file. If a cell shows n
 - [ ] Cell 38 shows the confusion matrix plot
 - [ ] Cells 40–41 identify specific error patterns with evidence
 - [ ] Cell 42 reflection answers are written out
-
----
-
-## 11. Academic Integrity
-
-You may use AI assistants (ChatGPT, Claude, Copilot) to help you understand concepts, debug errors, or learn LangGraph syntax. However:
-
-- All code in your submitted notebook must be **your own work** — you typed it **AND UNDERSTAND IT** (which you show in the **video**).
-- You may **not** copy-paste code from the reference implementation in `agents/` or `graph/`.
-- The **analysis, hypotheses, and reflection answers** must be your own original reasoning.
-- If you use an AI assistant, note which cells it helped with in a comment.
-
-The TODOs in the notebook represent the core intellectual contribution of this project. Submitting code you did not write or understand constitutes academic dishonesty.
 
 ---
 
