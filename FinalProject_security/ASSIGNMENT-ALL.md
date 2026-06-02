@@ -305,7 +305,7 @@ Every time you reconnect to a new Colab runtime, run these three cells before an
 
 ---
 
-## 10. Submission
+## 10. Submissions
 
 - Submit your completed notebook as a `.ipynb` file via D2L with **all cell outputs present**.
 - Create a video of code walk-through and discussions.
@@ -313,7 +313,7 @@ Every time you reconnect to a new Colab runtime, run these three cells before an
 ### How to download from Colab
 
 1. In Colab: **File → Download → Download .ipynb**
-2. Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`
+2. **Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`**
 3. Upload to D2L.
 
 Make sure all cell outputs are visible in the downloaded file. If a cell shows no output, re-run it and download again.

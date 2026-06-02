@@ -31,7 +31,7 @@ project. Read and run it before opening the project notebook.
 1. In the Colab menu bar, click **File → Save a copy in Drive**.
 2. A new tab opens with a copy named `Copy of langgraph_scaffold_colab.ipynb` in
    your `My Drive/Colab Notebooks/` folder.
-3. Rename it if you like: **File → Rename**.
+3. **Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`** (REQUIRED).
 4. Work in this copy from now on — it auto-saves to Drive.
 
 ---

@@ -85,6 +85,14 @@ cp .env.example .env
 jupyter notebook starter/prompt_injection_detection.ipynb
 ```
 
+### Save your copy
+
+1. In the Colab menu bar, click **File → Save a copy in Drive**.
+2. A new tab opens with a copy named `Copy of langgraph_scaffold_colab.ipynb` in
+   your `My Drive/Colab Notebooks/` folder.
+3. **Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`** (REQUIRED).
+4. Work in this copy from now on — it auto-saves to Drive.
+
 ---
 
 ## Assignment Details
@@ -94,11 +102,10 @@ jupyter notebook starter/prompt_injection_detection.ipynb
 
 ---
 
-## Submission
+## Submissions 
 
-1. In Colab: **File → Download → Download .ipynb**
-2. Rename: `Lastname_Firstname_FinalProject.ipynb`
-3. Upload to D2L with **all cell outputs present**.
+- Submit your completed notebook as a `.ipynb` file via D2L with **all cell outputs present**.
+- Create a video of code walk-through and discussions.
 
 ---
 
