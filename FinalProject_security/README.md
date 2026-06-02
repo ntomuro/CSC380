@@ -38,10 +38,11 @@ API key configuration, which cells to run first, and troubleshooting.
 
 ```
 FinalProject_security/
-+-- ASSIGNMENT.md               <- full project specification and rubric
++-- ASSIGNMENT-ALL.md           <- full code specification
 +-- COLAB_INSTRUCTIONS.md       <- step-by-step Colab setup guide for students
 +-- README.md
 +-- requirements.txt            <- for local development only
++-- .env
 +-- .env.example                <- template for local API key
 +-- data/
 |   +-- synthetic_dataset.py    <- 60 labeled conversations (embedded in Colab notebook)
@@ -55,10 +56,9 @@ FinalProject_security/
 +-- evaluation/
 |   +-- metrics.py              <- evaluation utilities (embedded in Colab notebook)
 +-- starter/
-|   +-- prompt_injection_detection_colab.ipynb   <- STUDENT WORKING FILE (Colab)
+|   +-- prompt_injection_detection_colab.ipynb   <- **STUDENT WORKING FILE (Colab)**
 |   +-- prompt_injection_detection.ipynb         <- local version (optional)
 |   +-- langgraph_scaffold_colab.ipynb           <- LangGraph tutorial (read first)
-|   +-- langgraph_scaffold.py                    <- plain-Python scaffold
 ```
 
 ---
@@ -86,6 +86,13 @@ jupyter notebook starter/prompt_injection_detection.ipynb
 
 ---
 
+## Assignment Details
+
+- [Code Assignment Specifications](ASSIGNMENT-ALL.md)
+- [Overall Assignment Page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html)
+
+---
+
 ## Submission
 
 1. In Colab: **File → Download → Download .ipynb**
@@ -96,5 +103,5 @@ jupyter notebook starter/prompt_injection_detection.ipynb
 
 ## Academic Integrity
 
-You may use LLM assistants to understand concepts, but all code you submit must be your own.
+You may use LLM assistants to understand concepts.  **HOWEVER, all code you submit must be your own.**
 The TODOs in the notebook represent the core intellectual contribution of this project.

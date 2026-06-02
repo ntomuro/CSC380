@@ -1,10 +1,13 @@
 # Final Project: Multi-Agent Adversarial Prompt Injection Detection System
 
-**Course:** AI Foundations (Undergraduate)  
+**Course:** CSC 380 Foundations of AI  
 **Format:** Final Project — replaces final exam  
-**Duration:** 2 weeks  
+**Due date:** June 11 (Thu), 11:59 pm.  NO LATE SUBMISSIONs will be accepted. 
 **Platform:** Google Colab (no local installation required)  
-**Deliverable:** Completed Jupyter Notebook (`.ipynb`) downloaded from Colab with all cell outputs present
+**Deliverables:** See the [assignment page]((https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html) for full details.
+ - Completed Jupyter Notebook (`.ipynb`) downloaded from Colab with all cell outputs present.  You must fill in **TODO 1-19**.
+     The notebook also includes **"Cell 17 — Reflection Questions"** where you write your answers to four questions (REQUIRED).
+ - Video of code walk-through and discussions.
 
 ---
 
@@ -126,18 +129,6 @@ Valid principle names: `Confidentiality`, `Role Integrity`, `Constraint Bypass`,
 
 ---
 
-### Optional Extra-Credit Agents (maximum 7 points)
-
-See **Section 12** for full specifications, required outputs, and integration instructions.
-
-| Agent | Points | One-line description |
-|-------|--------|----------------------|
-| **Critic Agent** | +3 | Challenges the Risk Agent's verdict and triggers a revision loop |
-| **Uncertainty Agent** | +2 | Identifies missing evidence that would resolve ambiguous cases |
-| **Policy Agent** | +2 | Applies explicit rule-based checks as a fourth parallel signal |
-
----
-
 ## 5. System Architecture
 
 The diagram below shows the complete data flow — from the dataset through the multi-agent pipeline to the final output and evaluation.
@@ -250,10 +241,9 @@ Each dict has: `id`, `label`, `category`, `difficulty`, `system_prompt`, `turns`
 Your working file lives in Google Colab. The GitHub repository that backs it is organized as follows:
 
 ```
-CSC380/starter/
+FinalProject_security/starter/
 ├── prompt_injection_detection_colab.ipynb   ← YOUR WORKING FILE (open in Colab)
 ├── langgraph_scaffold_colab.ipynb           ← read this first for LangGraph concepts
-└── langgraph_scaffold.py                    ← plain-Python version of the scaffold
 ```
 
 The helper files (`synthetic_dataset.py` and `metrics.py`) are embedded directly in the notebook and written to the Colab filesystem by the setup cell — you do not need to download or install anything separately.
@@ -261,7 +251,7 @@ The helper files (`synthetic_dataset.py` and `metrics.py`) are embedded directly
 The full repository also contains reference implementations you may study but must not copy:
 
 ```
-CSC380/
+FinalProject_security/
 ├── data/
 │   └── synthetic_dataset.py           ← 60 labeled conversations (embedded in notebook)
 ├── agents/
@@ -315,181 +305,10 @@ Every time you reconnect to a new Colab runtime, run these three cells before an
 
 ---
 
-## 10. Extra-Credit Agent Specifications (+10 points)
+## 10. Submission
 
-You may implement any or all three extra-credit agents. Each must be a real LangGraph node — not a function called outside the graph. Partial completion within an agent earns partial credit.
-
----
-
-### Critic Agent — +3 points
-
-**Purpose:** After the Risk Classification Agent produces a verdict, the Critic Agent reviews it and either endorses or challenges it. If it challenges the verdict, a revised classification is produced. This creates a **self-critique loop** — one of the acceptable orchestration patterns listed in Section 5.
-
-**How it fits into the graph:**
-
-```
-risk_classification --> critic
-critic --> risk_classification   (only if disagrees, max 1 revision)
-critic --> __end__               (if agrees or after revision)
-```
-
-Implement this using a **conditional edge** from the `critic` node:
-
-```python
-def route_after_critic(state):
-    if state["critic_result"]["agrees"]:
-        return "__end__"
-    elif state.get("revision_count", 0) >= 1:
-        return "__end__"   # prevent infinite loop
-    else:
-        return "risk_classification"
-
-builder.add_conditional_edges("critic", route_after_critic)
-```
-
-**New state fields to add:**
-
-```python
-critic_result:   Optional[dict]   # populated by critic node
-revision_count:  int              # incremented each time risk_classification reruns
-```
-
-**Required output JSON:**
-
-```json
-{
-  "agrees":             true | false,
-  "critique":           "2-3 sentences identifying the weakness in the verdict",
-  "overlooked_signals": ["signal the Risk Agent missed or underweighted", ...],
-  "suggested_revision": "Injection" | "Suspicious" | "Benign" | null
-}
-```
-
-`suggested_revision` must be `null` when `agrees` is `true`.
-
-**System prompt guidance:** The Critic should be specifically instructed to look for:
-- Overconfidence (high `risk_confidence` with weak evidence)
-- Ignored signals from one agent (e.g., hierarchy agent flagged a violation but risk agent called it Benign)
-- Underconfidence (verdict is Suspicious when both agents agree on Injection)
-
-**Grading (4 pts):**
-- 4/4: Critic node in graph, conditional edge routes correctly, revision loop runs on at least one conversation, `revision_count` prevents infinite loops, output JSON correct
-- 2/4: Critic node exists and produces output, but conditional edge is missing (no actual revision loop)
-- 1/4: Critic prompt written and API call made, but not integrated into the LangGraph graph
-
----
-
-### Uncertainty Agent — +2 points
-
-**Purpose:** After the Risk Classification Agent produces its verdict, the Uncertainty Agent identifies what specific information is absent from the conversation that would allow a more confident classification. This is particularly valuable for `Suspicious` verdicts — the agent articulates *why* the case is ambiguous and what would resolve it.
-
-**How it fits into the graph:**
-
-The Uncertainty Agent runs **after** risk classification and does not change the verdict — it annotates it.
-
-```
-risk_classification --> uncertainty_agent --> __end__
-```
-
-Or, for a more interesting design, run it **in parallel with risk_classification** and let both feed a final merge node.
-
-**New state field to add:**
-
-```python
-uncertainty_result: Optional[dict]   # populated by uncertainty node
-```
-
-**Required output JSON:**
-
-```json
-{
-  "uncertainty_flag":      true | false,
-  "uncertainty_level":     "low" | "medium" | "high",
-  "missing_information":   ["what specific information is absent", ...],
-  "confidence_impact":     "one sentence: how the missing info would change the verdict",
-  "recommended_action":    "proceed" | "flag_for_human_review" | "request_more_context"
-}
-```
-
-Set `uncertainty_flag` to `true` when `uncertainty_level` is `"medium"` or `"high"`.
-
-**System prompt guidance:** The agent should ask itself:
-- Is the system prompt vague enough that "misaligned" is debatable?
-- Is the user's intent only visible if you know the follow-up message (which isn't in the data)?
-- Would knowing the user's role (employee vs. attacker) change the verdict?
-- Is the injection embedded in content the model must process (RAG scenario), making attribution unclear?
-
-**Grading (3 pts):**
-- 3/3: Node in graph, output JSON correct, `uncertainty_flag` is true for at least some Suspicious conversations and false for most clear Injection/Benign ones, analysis shows reasoning specific to each conversation
-- 2/3: Node works and produces output, but `uncertainty_flag` is always the same value regardless of conversation, suggesting the prompt is not conversation-specific
-- 1/3: Agent implemented as a standalone function outside the graph, or output JSON is incomplete
-
----
-
-### Policy Agent — +2 points
-
-**Purpose:** Apply a set of **explicit, interpretable rules** to the conversation — a hybrid of rule-based and LLM-based detection. The Policy Agent runs in parallel with Agents 1 and 2 and feeds its verdict into the Risk Classification Agent alongside their outputs.
-
-**Why this is interesting:** Pure LLM agents can be inconsistent. A policy rule like *"if the user message contains 'ignore all previous instructions', flag as Injection with certainty 0.95"* is deterministic and auditable. Combining both approaches is realistic production practice.
-
-**How it fits into the graph:**
-
-```
-__start__ --> intent_analysis        ──┐
-__start__ --> instruction_hierarchy  ──┤──> risk_classification --> __end__
-__start__ --> policy_agent           ──┘
-```
-
-The Risk Classification Agent must be updated to also receive `policy_result` in its synthesis prompt.
-
-**New state field to add:**
-
-```python
-policy_result: Optional[dict]   # populated by policy_agent node
-```
-
-**Required output JSON:**
-
-```json
-{
-  "policy_violations": [
-    {
-      "rule_id":   "P01",
-      "rule_name": "Explicit Override Command",
-      "evidence":  "exact phrase from the conversation that triggered the rule",
-      "severity":  "low" | "medium" | "high"
-    }
-  ],
-  "policy_verdict":    "Benign" | "Suspicious" | "Injection",
-  "policy_confidence": 0.0 to 1.0,
-  "rule_count":        integer
-}
-```
-
-`policy_violations` is an empty list `[]` when no rules fire. `policy_verdict` is `"Benign"` when `rule_count` is 0.
-
-**Minimum policy rules to implement (at least 5):**
-
-| Rule ID | Rule Name | Trigger condition | Severity |
-|---------|-----------|-------------------|----------|
-| P01 | Explicit Override Command | User message contains "ignore", "disregard", or "forget" near "instructions" or "previous" | high |
-| P02 | Persona Substitution | User message contains "pretend you are", "act as", "you are now" combined with a name | high |
-| P03 | Prompt Extraction Attempt | User message requests "system prompt", "repeat your instructions", "what were you told" | high |
-| P04 | False Authority Claim | User message contains "I am the developer", "I am the admin", "I created you" | medium |
-| P05 | Hypothetical Bypass Framing | User message contains "hypothetically", "in a fictional world", "for a story" followed by a restricted topic | medium |
-
-You may use string matching, regex, or ask the LLM to check each rule individually (one call per rule, or all rules in one structured call).
-
-**Grading (3 pts):**
-- 2/2: Node in graph in parallel with Agents 1 and 2; ≥5 rules implemented; `policy_result` fed into Risk Classification Agent's synthesis prompt; P01/P02/P03 fire correctly on obvious Injection examples
-- 1.5/2: Node exists and rules run, but `policy_result` is not passed to Risk Classification Agent (results not used in final verdict)
-- 1/2: Rules implemented as a Python function outside the graph, or fewer than 3 rules
-
----
-
-## 12. Submission
-
-Submit your completed notebook as a `.ipynb` file via D2L with **all cell outputs present**.
+- Submit your completed notebook as a `.ipynb` file via D2L with **all cell outputs present**.
+- Create a video of code walk-through and discussions.
 
 ### How to download from Colab
 
@@ -513,7 +332,7 @@ Make sure all cell outputs are visible in the downloaded file. If a cell shows n
 
 ---
 
-## 13. Academic Integrity
+## 11. Academic Integrity
 
 You may use AI assistants (ChatGPT, Claude, Copilot) to help you understand concepts, debug errors, or learn LangGraph syntax. However:
 

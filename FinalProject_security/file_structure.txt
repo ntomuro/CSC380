@@ -19,7 +19,3 @@ FinalProject_security/
 |   +-- prompt_injection_detection_colab.ipynb   <- STUDENT WORKING FILE (Colab)
 |   +-- prompt_injection_detection.ipynb         <- local version (optional)
 |   +-- langgraph_scaffold_colab.ipynb           <- LangGraph tutorial (read first)
-|   +-- langgraph_scaffold.py                    <- plain-Python scaffold
-+-- reference/
-    +-- solution_colab.ipynb    <- instructor reference solution (Colab)
-    +-- solution_local.ipynb    <- instructor reference solution (local)
