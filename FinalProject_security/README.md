@@ -1,4 +1,4 @@
-# Final Project: Multi-Agent Adversarial Prompt Injection Detection System (2026 Spring)
+# :japanese_goblin: CSC 380 Spring 2026 Final Project: Multi-Agent Adversarial Prompt Injection Detection System (2026 Spring)
 
 ## Overview
 

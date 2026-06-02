@@ -4,9 +4,9 @@
 **Format:** Final Project — replaces final exam  
 **Due date:** June 11 (Thu), 11:59 pm.  NO LATE SUBMISSIONs will be accepted. 
 **Platform:** Google Colab (no local installation required)  
-**Deliverables:** See the [assignment page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html) for full details.
+**Deliverables:** See the **[assignment page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html)** for full details.
  - Completed Jupyter Notebook (`.ipynb`) downloaded from Colab with all cell outputs present.  You must fill in **TODO 1-19**.
-     The notebook also includes **"Cell 17 — Reflection Questions"** where you write your answers to four questions (REQUIRED).
+     The notebook also includes **"Cell 17 — Reflection Questions"** where you write your answers to the four questions (REQUIRED).
  - Video of code walk-through and discussions.
 
 ---
