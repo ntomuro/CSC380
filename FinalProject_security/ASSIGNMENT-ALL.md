@@ -1,6 +1,6 @@
 # Final Project: Multi-Agent Adversarial Prompt Injection Detection System
 
-**Course:** CSC 380 Foundations of AI  
+**Course:** CSC 380 Foundations of AI (2026 Spring)
 **Format:** Final Project — replaces final exam  
 **Due date:** June 11 (Thu), 11:59 pm.  NO LATE SUBMISSIONs will be accepted. 
 **Platform:** Google Colab (no local installation required)  

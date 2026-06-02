@@ -1,4 +1,4 @@
-# Final Project: Multi-Agent Adversarial Prompt Injection Detection System
+# Final Project: Multi-Agent Adversarial Prompt Injection Detection System (2026 Spring)
 
 ## Overview
 
