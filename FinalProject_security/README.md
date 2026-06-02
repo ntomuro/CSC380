@@ -100,6 +100,6 @@ jupyter notebook starter/prompt_injection_detection.ipynb
 
 ## Assignment Details (IMPORTANT)
 
-- <span style="color:red;">**[Code Specifications](ASSIGNMENT-ALL.md)**</span>
+- :japanese_goblin: **[Code Specifications](ASSIGNMENT-ALL.md)**
 - **[Overall Assignment Page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html)** - This is THE assignment page.  Check it for **SUBMISSION REQUIREMENTS**.
 
