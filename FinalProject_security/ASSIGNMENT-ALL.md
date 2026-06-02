@@ -1,4 +1,4 @@
-# Code Specifications
+# :japanese_goblin: Code Specifications
 
 Essentially, your job is to fill in TODO's in "starter/prompt_injection_detection.ipynb".
 
