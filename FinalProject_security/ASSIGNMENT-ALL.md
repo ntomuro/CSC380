@@ -336,7 +336,7 @@ Make sure all cell outputs are visible in the downloaded file. If a cell shows n
 
 You may use AI assistants (ChatGPT, Claude, Copilot) to help you understand concepts, debug errors, or learn LangGraph syntax. However:
 
-- All code in your submitted notebook must be **your own work** — you typed it.
+- All code in your submitted notebook must be **your own work** — you typed it **AND UNDERSTAND IT** (which you show in the **video**).
 - You may **not** copy-paste code from the reference implementation in `agents/` or `graph/`.
 - The **analysis, hypotheses, and reflection answers** must be your own original reasoning.
 - If you use an AI assistant, note which cells it helped with in a comment.
