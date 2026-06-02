@@ -90,8 +90,9 @@ jupyter notebook starter/prompt_injection_detection.ipynb
 1. In the Colab menu bar, click **File → Save a copy in Drive**.
 2. A new tab opens with a copy named `Copy of langgraph_scaffold_colab.ipynb` in
    your `My Drive/Colab Notebooks/` folder.
-3. **Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`** (REQUIRED).
-4. Work in this copy from now on — it auto-saves to Drive.
+3. ** Write your name in the first markdown cell (Name:)**.
+4. **Rename the downloaded file: `Lastname_Firstname_FinalProject.ipynb`** (REQUIRED).
+5. Work in this copy from now on — it auto-saves to Drive.
 
 ---
 
@@ -100,16 +101,3 @@ jupyter notebook starter/prompt_injection_detection.ipynb
 - **[Code Specifications](ASSIGNMENT-ALL.md)**
 - **[Overall Assignment Page](https://condor.depaul.edu/ntomuro/courses/380/2026spring/assign/FinalProject/finalproj-2026spring.html)** - This is THE assignment page.  Check it for **SUBMISSION REQUIREMENTS**.
 
----
-
-## Submissions 
-
-- Submit your completed notebook as a `.ipynb` file via D2L with **all cell outputs present**.
-- Create a video of code walk-through and discussions.
-
----
-
-## Academic Integrity
-
-You may use LLM assistants to understand concepts.  **HOWEVER, all code you submit must be your own.**
-The TODOs in the notebook represent the core intellectual contribution of this project.
